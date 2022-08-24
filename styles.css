@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px; 
+    background: lightgrey;
+}
+ 
+ /* Navigation bar style */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+  
+ul.topnav li {float: left;}
+  
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Style for hover, not active page */
+  
+ul.topnav li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+}
+
+/* Style for active page */
+   
+ul.topnav li a.active {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* Style for focus page */
+   
+ul.topnav li a:focus {
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+  }
+
+/* Style for right aligned tab (Contact) */
+  
+ul.topnav li.right {float: right;}
+
+/* Responsive nav media query */
+  
+@media screen and (max-width: 600px) {  
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+/* Header style */
+
+.header {
+    background: url(https://wallpapercave.com/wp/wp2217941.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+}
+
+.header h1 {
+    font-size: 50px;
+    opacity: 75%;
+    background-color: white;
+    color: black;
+}
+
+/* Transparent box style */
+
+.transbox {
+    margin: 30px;
+    background-color: white;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+.transbox h1 {
+    margin: 5%;
+    font-weight: bold;
+    color: #006666;
+    text-align: center;
+    opacity: 100%;
+    font-size: 40px;
+}
+
+.transbox p {
+    color: #006666;
+    text-align: center;
+    opacity: 100%;
+}
+
+/* Footer style */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Button style */
+
+.button {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* 2 column page layout */
+
+.column {
+    float: left;
+    /* width: 50%; */
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive when the screen size is less than 600px */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* Table style */
+
+#formatting {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#formatting td, formatting th {
+    border: 1px solid darkgray;
+    padding: 8px;
+}
+
+#formatting tr:nth-child(even) {
+    background-color: f2f2f2;
+}
+
+#formatting tr:hover {
+    background-color: darkgrey;
+}
+
+#formatting th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #006666;
+    color: white;
+}
+
+ /* Input style */
+ input[type=text], select {
+    width: 33%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid beige;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+@media screen and (max-width: 600px) {
+    input[type=text] {
+        width: 100%;
+    }
+}
+
+/* Skip to main content link style */
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    color: white;
+  }
+
+/* Link styling */
+
+a {
+    color: #006666;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover, a:focus {
+    background-color: black;
+    color: white;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
+
+/* Image style */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+/* figure style */
+
+figure figcaption {
+    text-align: center;
+}
